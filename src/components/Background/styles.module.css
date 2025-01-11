@@ -1,5 +1,6 @@
 @keyframes one {
-  0% {
+  0%,
+  100% {
     top: var(--top);
     left: var(--left);
     width: var(--width);
@@ -22,12 +23,6 @@
     left: var(--left-75);
     width: var(--width-75);
     height: var(--height-75);
-  }
-  100% {
-    top: var(--top);
-    left: var(--left);
-    width: var(--width);
-    height: var(--height);
   }
 }
 
