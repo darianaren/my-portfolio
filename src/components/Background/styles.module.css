@@ -1,0 +1,78 @@
+@keyframes one {
+  0% {
+    top: var(--top);
+    left: var(--left);
+    width: var(--width);
+    height: var(--height);
+  }
+  25% {
+    top: var(--top-25);
+    left: var(--left-25);
+    width: var(--width-25);
+    height: var(--height-25);
+  }
+  50% {
+    top: var(--top-50);
+    left: var(--left-50);
+    width: var(--width-50);
+    height: var(--height-50);
+  }
+  75% {
+    top: var(--top-75);
+    left: var(--left-75);
+    width: var(--width-75);
+    height: var(--height-75);
+  }
+  100% {
+    top: var(--top);
+    left: var(--left);
+    width: var(--width);
+    height: var(--height);
+  }
+}
+
+.absolute {
+  position: absolute;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+
+  z-index: -1;
+
+  overflow: hidden;
+}
+
+.justify-center {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bg-shape {
+  position: absolute;
+
+  border-radius: 50%;
+  animation: one 100s infinite ease-in-out;
+}
+
+.bg-blur {
+  filter: blur(90px);
+}
+
+.color-1 {
+  background-color: #ffc6c680;
+}
+.color-2 {
+  background-color: #cdf1f580;
+}
+.color-3 {
+  background-color: #f7ecd280;
+}
+.color-4 {
+  background-color: #ffeee080;
+}
+.color-5 {
+  background-color: #ffe0f180;
+}
