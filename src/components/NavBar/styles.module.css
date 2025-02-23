@@ -5,7 +5,7 @@
   bottom: 1.7rem;
   position: fixed;
 
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 1rem;
 
   border-radius: 1.75rem;
   transform: translateX(-50%);
@@ -16,8 +16,10 @@
 }
 
 .nav-ul {
-  gap: 1rem;
+  gap: 0.5rem;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-li {
@@ -27,10 +29,8 @@
 }
 
 .tooltip {
-  display: none;
-
-  top: -3rem;
-  left: -0.5rem;
+  top: -2.75rem;
+  left: 0rem;
   position: absolute;
 
   font-size: 0.85rem;
@@ -39,8 +39,11 @@
   width: max-content;
   padding: 0.3rem 0.85rem 0.35rem;
 
+  opacity: 0;
   z-index: 200;
+  visibility: hidden;
   border-radius: 0.25rem;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   background-color: var(--cream);
 }
 
@@ -60,16 +63,32 @@
 
 @media (pointer: fine) {
   .nav-li:hover .tooltip {
-    display: block;
+    opacity: 1;
+    visibility: visible;
   }
+}
+
+.active,
+.inactive {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.5rem;
+
+  border-radius: 50%;
+}
+
+.active {
+  background-color: var(--cream);
 }
 
 @media screen and (min-width: 1000px) {
   .nav-container {
     bottom: 50vh;
-    left: 2.8rem;
+    left: 2.65rem;
 
-    padding: 1rem 0.5rem;
+    padding: 1rem 0.25rem;
 
     transform: translate(0%, 50%);
   }
@@ -79,8 +98,8 @@
   }
 
   .tooltip {
-    top: 0rem;
-    left: 2.25rem;
+    top: 0.25rem;
+    left: 3rem;
 
     padding: 0.3rem 0.85rem 0.35rem;
   }

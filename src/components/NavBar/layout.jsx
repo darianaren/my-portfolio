@@ -5,14 +5,8 @@ import styles from "./styles.module.css";
 export const NavItem = ({ to, icon, label, isExternal, download }) => {
   if (isExternal) {
     return (
-      <a href={to} download={download}>
-        <img
-          width={20}
-          height={20}
-          className={`icon ${styles["nav-link-icon"]}`}
-          src={icon}
-          alt={label}
-        />
+      <a href={to} download={download} className={styles.inactive}>
+        <img width={20} height={20} src={icon} alt={label} className="icon" />
       </a>
     );
   }
@@ -22,14 +16,12 @@ export const NavItem = ({ to, icon, label, isExternal, download }) => {
   };
 
   return (
-    <NavLink to={to} onClick={handleScrollTop} activeClassName={styles.active}>
-      <img
-        width={20}
-        height={20}
-        className={`icon ${styles["nav-link-icon"]}`}
-        src={icon}
-        alt={label}
-      />
+    <NavLink
+      to={to}
+      onClick={handleScrollTop}
+      className={({ isActive }) => (isActive ? styles.active : styles.inactive)}
+    >
+      <img width={20} height={20} src={icon} alt={label} className="icon" />
     </NavLink>
   );
 };
