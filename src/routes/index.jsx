@@ -29,7 +29,7 @@ const RouterConfig = () => {
           <Route index element={<Home />} />
           <Route path="skills" element={<Skills />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="proyects" element={<Projects />} />
+          <Route path="projects" element={<Projects />} />
 
           <Route path="*" element={<NotFound />} />
         </Route>
