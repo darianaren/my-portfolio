@@ -16,6 +16,7 @@ const NavBar = () => {
               <span className={styles.tooltip}>{item.label}</span>
             </li>
           ))}
+          <div className={styles.indicator}></div>
         </ul>
       </nav>
     </header>
