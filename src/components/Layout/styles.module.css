@@ -1,3 +1,5 @@
+@import "../../styles/variables.css";
+
 .wrapper {
   position: relative;
 
@@ -5,7 +7,7 @@
   height: calc(100vh - 4rem);
 
   inset: 1rem;
-  border: 1px solid #1d150a;
+  border: 1px solid var(--black);
 }
 
 @media screen and (min-width: 1000px) {

@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Meow+Script&family=Quicksand:wght@300..700&display=swap");
+
+:root {
+  /* Typography */
+  --font-size: max(17px, 1vw);
+
+  --font-family-title: "Meow Script", sans-serif;
+  --font-family-text: "Quicksand", sans-serif;
+
+  --light-300: 300;
+  --regular-400: 400;
+  --medium-500: 500;
+  --semibold-600: 600;
+  --bold-700: 700;
+
+  /* Border radius */
+  --border-radius: 0.5rem;
+
+  /* Colors */
+  --black: #1d150a;
+  --cream: #e9d3cc;
+  --white: #fdf8f4;
+
+  /* Icon filters */
+  --filter-black: brightness(0) saturate(100%) invert(6%) sepia(6%)
+    saturate(6060%) hue-rotate(355deg) brightness(96%) contrast(94%);
+}
