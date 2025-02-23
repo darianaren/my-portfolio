@@ -1,7 +1,13 @@
 import React from "react";
 
+import PageWrapper from "../../templates/PageWrapper/PageWrapper";
+
 const Contact = () => {
-  return <h2>Contáctanos</h2>;
+  return (
+    <PageWrapper title="Contáctame ♡">
+      <p>Soy la página de contacto</p>
+    </PageWrapper>
+  );
 };
 
 export default Contact;

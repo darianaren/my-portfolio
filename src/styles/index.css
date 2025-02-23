@@ -38,10 +38,6 @@ label {
   cursor: default;
 }
 
-h1 {
-  font-family: var(--font-family-title);
-}
-
 .icon {
   filter: var(--filter-black);
 }

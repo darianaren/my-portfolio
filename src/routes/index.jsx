@@ -12,7 +12,7 @@ import Skills from "../pages/Skills/Skills";
 import Contact from "../pages/Contact/Contact";
 import Projects from "../pages/Projects/Projects";
 import NotFound from "../pages/NotFound/NotFound";
-import Layout from "../components/Layout/Layout";
+import AppLayout from "../templates/AppLayout/AppLayout";
 
 const RouterConfig = () => {
   return (
@@ -21,9 +21,9 @@ const RouterConfig = () => {
         <Route
           path="/"
           element={
-            <Layout>
+            <AppLayout>
               <Outlet />
-            </Layout>
+            </AppLayout>
           }
         >
           <Route index element={<Home />} />
