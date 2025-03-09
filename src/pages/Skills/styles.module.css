@@ -1,1 +1,5 @@
 @import "../../styles/variables.css";
+
+.title {
+  font-size: 1rem;
+}

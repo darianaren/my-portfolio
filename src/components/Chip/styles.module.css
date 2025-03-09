@@ -1,1 +1,15 @@
 @import "../../styles/variables.css";
+
+.label {
+  display: inline-block;
+
+  line-height: 2ch;
+  color: var(--white);
+  vertical-align: middle;
+  font-weight: var(--medium-500);
+
+  padding: 0.4rem 1.15rem;
+
+  border-radius: 5rem;
+  background-color: var(--black);
+}
