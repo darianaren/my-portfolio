@@ -1,16 +1,25 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
+import styles from "./styles.module.css";
+
+import LinkButton from "../../components/LinkButton/LinkButton";
 
 const NotFound = () => {
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>404</h1>
-      <p>Lo sentimos, la página que buscas no existe.</p>
-      <Link to="/" style={{ color: "blue", textDecoration: "underline" }}>
-        Volver al inicio
-      </Link>
-    </div>
+    <motion.div
+      exit={{ opacity: 0 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.3 }}
+      className={styles.wrapper}
+    >
+      <h1 className={styles.title}>
+        <span className={styles["span-title"]}>404</span> | PÁGINA NO ENCONTRADA
+      </h1>
+      <LinkButton to="/">VOLVER</LinkButton>
+    </motion.div>
   );
 };
 
