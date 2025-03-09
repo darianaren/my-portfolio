@@ -38,6 +38,10 @@ label {
   cursor: default;
 }
 
+.display-none {
+  display: none;
+}
+
 .icon {
   filter: var(--filter-black);
 }

@@ -1,22 +1,25 @@
 import React, { useCallback } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import styles from "./styles.module.css";
-import { NAV_ITEMS } from "./constants";
 
 import { useExitDirection } from "../../context/ExitDirectionContext";
 
-export const NavItem = ({ to, icon, label, isExternal, download }) => {
-  const location = useLocation();
+export const NavItem = ({
+  to,
+  icon,
+  label,
+  download,
+  prevIndex,
+  isExternal,
+  pathsIndex
+}) => {
   const { setExitDirection, setCurrentIndexPath, setPrevIndexPath } =
     useExitDirection();
 
   const currentPath = to;
-  const prevPath = location.pathname;
 
-  const paths = NAV_ITEMS.map((item) => item.to);
-  const currentIndex = paths.indexOf(currentPath);
-  const prevIndex = prevPath ? paths.indexOf(prevPath) : 0;
+  const currentIndex = pathsIndex.indexOf(currentPath);
 
   let direction = "up";
 
