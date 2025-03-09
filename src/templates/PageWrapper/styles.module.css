@@ -1,1 +1,26 @@
 @import "../../styles/variables.css";
+
+.title {
+  font-size: 0.75rem;
+  text-align: right;
+  font-weight: var(--regular-400);
+
+  margin: 1rem;
+}
+
+.section-wrapper {
+  width: 100%;
+  height: calc(100% - 3rem);
+}
+
+@media screen and (min-width: 1000px) {
+  .title {
+    font-size: 1rem;
+
+    margin: 1.5rem;
+  }
+
+  .section-wrapper {
+    height: calc(100% - 4.3rem);
+  }
+}

@@ -1,1 +1,23 @@
 @import "../../styles/variables.css";
+
+.buttons-container {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  min-height: 100%;
+  margin: 0 2rem;
+}
+
+.link {
+  color: var(--white);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .buttons-container {
+    max-width: 25rem;
+    margin: auto;
+  }
+}

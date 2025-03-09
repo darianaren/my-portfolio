@@ -26,7 +26,7 @@ export const NAV_ITEMS = Object.freeze([
     icon: cvIcon,
     isExternal: true,
     label: "Descargar CV",
-    download: "Dariana Rengifo - CV"
+    download: "Dariana Rengifo - Full Stack Developer - CV"
   },
   {
     to: "/contact",
