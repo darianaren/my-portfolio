@@ -5,7 +5,7 @@ export const BUTTONS = Object.freeze([
     key: 1,
     label: "WhatsApp",
     copy: "+5493517739445",
-    link: "wha.me/+5493517739445"
+    link: "https://wa.me/+5493517739445"
   },
   {
     key: 2,
