@@ -12,7 +12,7 @@ const Contact = () => {
   };
 
   return (
-    <PageWrapper title="Contáctame ♡">
+    <PageWrapper borderBlur title="Contáctame ♡">
       <div className={styles["buttons-container"]}>
         {BUTTONS.map(({ key, label, email, link, download, copy }) => (
           <Button key={key} onClick={copy ? copyText(copy) : null}>
