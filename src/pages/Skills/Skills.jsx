@@ -8,9 +8,9 @@ import {
 } from "./constants";
 import styles from "./styles.module.css";
 
+import Divider from "../../components/Divider/Divider";
 import ChipGroup from "../../components/ChipGroup/ChipGroup";
 import PageWrapper from "../../templates/PageWrapper/PageWrapper";
-import Divider from "../../components/Divider/Divider";
 
 const Skills = () => {
   return (
