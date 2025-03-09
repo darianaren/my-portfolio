@@ -8,7 +8,8 @@ import { useExitDirection } from "../../context/ExitDirectionContext";
 
 export const NavItem = ({ to, icon, label, isExternal, download }) => {
   const location = useLocation();
-  const { setExitDirection } = useExitDirection();
+  const { setExitDirection, setCurrentIndexPath, setPrevIndexPath } =
+    useExitDirection();
 
   const currentPath = to;
   const prevPath = location.pathname;
@@ -23,7 +24,16 @@ export const NavItem = ({ to, icon, label, isExternal, download }) => {
 
   const handleScrollTop = useCallback(() => {
     setExitDirection(direction);
-  }, [direction, setExitDirection]);
+    setPrevIndexPath(prevIndex);
+    setCurrentIndexPath(currentIndex);
+  }, [
+    direction,
+    prevIndex,
+    currentIndex,
+    setExitDirection,
+    setPrevIndexPath,
+    setCurrentIndexPath
+  ]);
 
   if (isExternal) {
     return (
