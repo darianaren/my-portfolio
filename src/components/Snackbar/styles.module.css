@@ -1,0 +1,30 @@
+@import "../../styles/variables.css";
+
+.snackbar {
+  left: 50%;
+  bottom: 5rem;
+  position: fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  min-height: 60px;
+  max-width: calc(100% - 3rem);
+
+  z-index: 1000;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: #323232;
+  box-shadow: 0px 3px 5px 1px #32323265;
+}
+
+.message {
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--white);
+  text-align: center;
+
+  cursor: pointer;
+}

@@ -5,13 +5,17 @@ import styles from "./styles.module.css";
 
 import Button from "../../components/Button/Button";
 import PageWrapper from "../../templates/PageWrapper/PageWrapper";
+import { useSnackbar } from "../../context/SnackbarContext";
 
 const Contact = () => {
+  const { showSnackbar } = useSnackbar();
+
   const handleButtonClick =
     ({ copy, email, download, link }) =>
     () => {
       if (copy) {
         navigator.clipboard.writeText(copy);
+        showSnackbar("Texto copiado en portapapeles");
       }
 
       if (email) {

@@ -1,5 +1,7 @@
 import RouterConfig from "./routes";
 import Background from "./components/Background/Background";
+
+import { SnackbarProvider } from "./context/SnackbarContext";
 import { WindowSizeProvider } from "./context/WindowSizeContext";
 import { ExitDirectionProvider } from "./context/ExitDirectionContext";
 
@@ -7,8 +9,10 @@ function App() {
   return (
     <ExitDirectionProvider>
       <WindowSizeProvider>
-        <Background />
-        <RouterConfig />
+        <SnackbarProvider>
+          <Background />
+          <RouterConfig />
+        </SnackbarProvider>
       </WindowSizeProvider>
     </ExitDirectionProvider>
   );
