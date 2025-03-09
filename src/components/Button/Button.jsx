@@ -1,8 +1,10 @@
 import React, { useReducer, memo } from "react";
 
-import styles from "./styles.module.css";
 import { reducer } from "./reducer";
+import styles from "./styles.module.css";
 import { ACTIONS_TYPES, INITIAL_STATE } from "./constants";
+
+import RippleEffect from "../RippleEffect/RippleEffect";
 
 const Button = memo(
   ({ onClick, disabled = false, isLoading = false, children = "Button" }) => {
@@ -38,19 +40,12 @@ const Button = memo(
         disabled={effectiveDisabled}
         className={`${styles.button}`}
       >
-        <div className={styles.ripple}>
-          <span
-            key={state.animationKey}
-            className={`${styles["ripple-circle"]} ${
-              state.isAnimating ? styles["is-active"] : ""
-            }`}
-            style={{
-              top: `${state.coords.y}px`,
-              left: `${state.coords.x}px`
-            }}
-            onAnimationEnd={handleAnimationEnd}
-          />
-        </div>
+        <RippleEffect
+          coords={state.coords}
+          isAnimating={state.isAnimating}
+          animationKey={state.animationKey}
+          onAnimationEnd={handleAnimationEnd}
+        />
 
         <div className={styles.content}>{!isLoading ? children : "Espere"}</div>
       </button>
