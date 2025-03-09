@@ -4,8 +4,10 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Outlet
+  Outlet,
+  useLocation
 } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 import Home from "../pages/Home/Home";
 import Skills from "../pages/Skills/Skills";
@@ -14,10 +16,12 @@ import Projects from "../pages/Projects/Projects";
 import NotFound from "../pages/NotFound/NotFound";
 import AppLayout from "../templates/AppLayout/AppLayout";
 
-const RouterConfig = () => {
+const AnimatedRoutes = () => {
+  const location = useLocation();
+
   return (
-    <Router>
-      <Routes>
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
         <Route
           path="/"
           element={
@@ -34,8 +38,14 @@ const RouterConfig = () => {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
-    </Router>
+    </AnimatePresence>
   );
 };
+
+const RouterConfig = () => (
+  <Router>
+    <AnimatedRoutes />
+  </Router>
+);
 
 export default RouterConfig;
