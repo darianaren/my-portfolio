@@ -25,7 +25,7 @@ export const NavItem = ({
 
   if (prevIndex > currentIndex) direction = "down";
 
-  const handleScrollTop = useCallback(() => {
+  const onClickLink = useCallback(() => {
     setExitDirection(direction);
     setPrevIndexPath(prevIndex);
     setCurrentIndexPath(currentIndex);
@@ -49,7 +49,7 @@ export const NavItem = ({
   return (
     <NavLink
       to={to}
-      onClick={handleScrollTop}
+      onClick={onClickLink}
       className={({ isActive }) => (isActive ? styles.active : styles.inactive)}
     >
       <img width={20} height={20} src={icon} alt={label} className="icon" />
