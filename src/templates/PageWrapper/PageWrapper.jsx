@@ -7,7 +7,7 @@ import { PAGE_VARIANTS } from "./constants";
 
 import { useExitDirection } from "../../context/ExitDirectionContext";
 
-const PageWrapper = ({ borderBlur, title, children }) => {
+const PageWrapper = ({ fullHeight, borderBlur, title, children }) => {
   const { exitDirection } = useExitDirection();
 
   return (
@@ -23,7 +23,7 @@ const PageWrapper = ({ borderBlur, title, children }) => {
       <section
         className={`${styles["section-wrapper"]} ${
           borderBlur ? styles["border-blur"] : ""
-        }`}
+        } ${fullHeight ? styles["full-height"] : ""}`}
       >
         {children}
       </section>

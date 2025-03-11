@@ -16,6 +16,11 @@
   overflow-y: auto;
 }
 
+.section-wrapper.full-height {
+  padding: 0;
+  height: 100%;
+}
+
 .section-wrapper::-webkit-scrollbar {
   width: 0.4rem;
 
