@@ -1,4 +1,4 @@
-import React, { memo, useMemo } from "react";
+import React, { memo, useEffect, useMemo } from "react";
 
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
@@ -20,6 +20,10 @@ const NavBar = memo(() => {
 
   const path = location.pathname;
   const indexPath = useMemo(() => pathsIndex.indexOf(path), [path, pathsIndex]);
+
+  useEffect(() => {
+    localStorage.setItem("currentIndexPath", indexPath);
+  }, [indexPath]);
 
   return (
     <header>
