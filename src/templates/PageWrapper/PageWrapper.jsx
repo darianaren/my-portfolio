@@ -15,9 +15,9 @@ const PageWrapper = ({ fullHeight, borderBlur, title, children }) => {
       animate="animate"
       exit={exitDirection}
       variants={PAGE_VARIANTS}
-      style={{ position: "absolute", width: "100%", height: "100%" }}
       initial={exitDirection === "up" ? "down" : "up"}
       transition={{ duration: 0.5, ease: "easeInOut" }}
+      style={{ position: "absolute", width: "100%", height: "100%" }}
     >
       {title ? <h1 className={styles.title}>{title}</h1> : null}
       <section

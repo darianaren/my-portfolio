@@ -3,11 +3,18 @@ import { createContext, useState, useEffect, useContext } from "react";
 const WindowSizeContext = createContext();
 
 export const WindowSizeProvider = ({ children }) => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1000);
+  const checkIsMobile = () => {
+    return (
+      window.innerWidth < 1000 ||
+      window.matchMedia("(orientation: portrait)").matches
+    );
+  };
+
+  const [isMobile, setIsMobile] = useState(checkIsMobile());
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1000);
+      setIsMobile(checkIsMobile());
     };
 
     window.addEventListener("resize", handleResize);

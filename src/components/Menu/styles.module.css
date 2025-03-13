@@ -1,1 +1,58 @@
 @import "../../styles/variables.css";
+
+.ul-items-container {
+  left: -1rem;
+  position: relative;
+
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem;
+  width: calc(100% + 2rem);
+
+  border-bottom: 1px solid var(--black);
+}
+
+.li-items {
+  list-style: none;
+  font-weight: var(--medium-500);
+  font-family: var(--font-family-text);
+
+  cursor: pointer;
+}
+
+.indicator {
+  left: 0;
+  top: 0.5rem;
+  position: absolute;
+
+  height: 2.25rem;
+
+  z-index: -1;
+  border-radius: 1rem;
+  background-color: var(--cream);
+}
+
+@media screen and (min-width: 600px) {
+  .ul-items-container {
+    gap: 2rem;
+  }
+
+  .indicator {
+    border-radius: 10rem;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 1000px) {
+  .ul-items-container {
+    justify-content: flex-start;
+
+    width: calc(100% * 2);
+  }
+
+  .indicator {
+    left: 0rem;
+  }
+}
