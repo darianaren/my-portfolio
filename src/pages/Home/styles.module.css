@@ -52,6 +52,7 @@
   }
 
   .title-container {
+    gap: 1rem;
     order: 0;
   }
 

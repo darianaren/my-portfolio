@@ -65,9 +65,7 @@ const Home = () => {
           </div>
         </section>
 
-        <aside className={styles["aside-container"]}>
-          <FlipImage frontImage={homeImageOne} backImage={homeImageTwo} />
-        </aside>
+        <FlipImage frontImage={homeImageOne} backImage={homeImageTwo} />
       </div>
     </PageWrapper>
   );

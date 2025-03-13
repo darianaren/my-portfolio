@@ -16,6 +16,6 @@
   .image {
     width: auto;
     max-width: none;
-    height: 70vh;
+    height: min(70vh, 50vw);
   }
 }
