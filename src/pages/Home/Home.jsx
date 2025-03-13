@@ -50,7 +50,7 @@ const Home = () => {
       <div className={styles.wrapper}>
         <section className={styles["title-container"]}>
           <picture className={styles["image-title"]}>
-            <source srcSet={nameDesktop} media="(min-width: 1000px)" />
+            <source srcSet={nameDesktop} media="(min-width: 1030px)" />
             <img
               src={nameMobile}
               alt="Full stack developer - Dariana Rengifo"
@@ -65,7 +65,7 @@ const Home = () => {
           </div>
         </section>
 
-        <aside>
+        <aside className={styles["aside-container"]}>
           <FlipImage frontImage={homeImageOne} backImage={homeImageTwo} />
         </aside>
       </div>

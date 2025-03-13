@@ -1,0 +1,21 @@
+@import "../../styles/variables.css";
+
+.image {
+  width: 70vw;
+  max-width: min(15rem, 30vh);
+  height: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .image {
+    max-width: min(25rem, 30vh);
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 1000px) {
+  .image {
+    width: auto;
+    max-width: none;
+    height: 70vh;
+  }
+}

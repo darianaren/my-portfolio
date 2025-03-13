@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+import styles from "./styles.module.css";
+
 const FlipImage = ({ frontImage, backImage }) => {
   return (
     <motion.div
@@ -24,9 +26,8 @@ const FlipImage = ({ frontImage, backImage }) => {
       <motion.img
         src={frontImage}
         alt="Frontal"
+        className={styles.image}
         style={{
-          width: "auto",
-          height: "80vh",
           visibility: "hidden"
         }}
       />

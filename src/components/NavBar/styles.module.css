@@ -90,7 +90,7 @@
   background-color: var(--cream);
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (orientation: landscape) and (min-width: 1000px) {
   .nav-container {
     bottom: 50vh;
     left: 2.65rem;
