@@ -1,18 +1,35 @@
 @import "../../styles/variables.css";
 
-.wrapper {
+.wrapper.horizontal {
   gap: 1rem;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
 
   padding: 1rem 0;
 }
 
-.image {
-  order: 2;
+.wrapper.vertical {
+  padding: 1rem 0;
+}
 
-  width: 20vw;
+.horizontal .image {
+  order: 2;
+  flex-shrink: 0;
+
   height: auto;
+  width: min(24rem, 100%);
+}
+
+.vertical .image {
+  width: 100%;
+  height: auto;
+}
+
+.info-container {
+  flex: 1;
+  min-width: 0;
 }
 
 .title {

@@ -1,10 +1,11 @@
 import React, { useCallback, useMemo, useState } from "react";
+
 import { motion, AnimatePresence } from "framer-motion";
 
 import { MENU_ITEMS, MENU_PAGE, PAGE_VARIANTS } from "./constants";
 
-import Card from "../../components/Card/Card";
 import Menu from "../../components/Menu/Menu";
+import CardGroup from "../../components/CardGroup/CardGroup";
 import PageWrapper from "../../templates/PageWrapper/PageWrapper";
 
 const Projects = () => {
@@ -20,7 +21,10 @@ const Projects = () => {
     });
   }, []);
 
-  const menuPage = useMemo(() => MENU_PAGE[selectedItem], [selectedItem]);
+  const { menuPage, divider, orientation } = useMemo(
+    () => MENU_PAGE[selectedItem],
+    [selectedItem]
+  );
 
   return (
     <PageWrapper title="Experiencia y proyectos">
@@ -36,19 +40,11 @@ const Projects = () => {
             variants={PAGE_VARIANTS}
             transition={{ duration: 0.5 }}
           >
-            {menuPage.map(
-              ({ key, title, subtitle, image, description, labels }, index) => (
-                <Card
-                  key={key}
-                  title={title}
-                  image={image}
-                  labels={labels}
-                  subtitle={subtitle}
-                  description={description}
-                  divider={index !== menuPage.length - 1}
-                />
-              )
-            )}
+            <CardGroup
+              cards={menuPage}
+              divider={divider}
+              orientation={orientation}
+            />
           </motion.div>
         </AnimatePresence>
       </div>

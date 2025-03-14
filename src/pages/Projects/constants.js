@@ -176,7 +176,7 @@ export const CERTIFICATES = Object.freeze([
 ]);
 
 export const MENU_PAGE = Object.freeze({
-  0: EXPERIENCES,
-  1: PROJECTS,
-  2: CERTIFICATES
+  0: { menuPage: EXPERIENCES, divider: true },
+  1: { menuPage: PROJECTS, divider: true },
+  2: { menuPage: CERTIFICATES, orientation: "vertical" }
 });

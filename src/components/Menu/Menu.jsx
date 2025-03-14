@@ -31,7 +31,7 @@ const Menu = memo(({ items, setSelectedItem }) => {
   );
 
   return (
-    <nav>
+    <nav style={{ marginBottom: "2rem" }}>
       <ul className={styles["ul-items-container"]}>
         {items.map(({ index, key, label }) => (
           <li
