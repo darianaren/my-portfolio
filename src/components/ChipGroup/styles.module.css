@@ -4,6 +4,8 @@
   gap: 0.5rem;
   display: flex;
   flex-wrap: wrap;
+}
 
+.padding {
   padding: 1rem;
 }

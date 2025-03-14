@@ -1,1 +1,30 @@
 @import "../../styles/variables.css";
+
+.wrapper {
+  gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 1rem 0;
+}
+
+.image {
+  order: 2;
+
+  width: 20vw;
+  height: auto;
+}
+
+.title {
+  font-size: 1rem;
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  font-weight: var(--light-300);
+}
+
+.description {
+  font-weight: var(--light-300);
+  padding: 1rem 0;
+}

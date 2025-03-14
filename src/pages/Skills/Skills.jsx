@@ -16,22 +16,22 @@ const Skills = () => {
   return (
     <PageWrapper borderBlur title="Conocimientos y habilidades">
       <h2 className={styles.title}>Frontend</h2>
-      <ChipGroup chips={FRONTEND_SKILLS} />
+      <ChipGroup padding chips={FRONTEND_SKILLS} />
 
       <Divider />
 
       <h2 className={styles.title}>Backend</h2>
-      <ChipGroup chips={BACKEND_SKILLS} />
+      <ChipGroup padding chips={BACKEND_SKILLS} />
 
       <Divider />
 
       <h2 className={styles.title}>Tecnologías y software</h2>
-      <ChipGroup chips={TECHNOLOGIES_SKILLS} />
+      <ChipGroup padding chips={TECHNOLOGIES_SKILLS} />
 
       <Divider />
 
       <h2 className={styles.title}>Habilidades blandas</h2>
-      <ChipGroup chips={SOFT_SKILLS} />
+      <ChipGroup padding chips={SOFT_SKILLS} />
     </PageWrapper>
   );
 };
