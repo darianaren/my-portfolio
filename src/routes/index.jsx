@@ -16,7 +16,7 @@ import NavBar from "../components/NavBar/NavBar";
 import Projects from "../pages/Projects/Projects";
 import NotFound from "../pages/NotFound/NotFound";
 import AppLayout from "../templates/AppLayout/AppLayout";
-import AnimatedIntro from "../components/AnimatedIntro/AnimatedIntro ";
+import AnimatedIntro from "../components/AnimatedIntro/AnimatedIntro";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
