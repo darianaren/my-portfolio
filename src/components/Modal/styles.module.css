@@ -41,9 +41,27 @@
   background: var(--cream);
 }
 
-.title {
-  font-size: 1.75rem;
+.header {
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 1.2rem;
   margin: 1rem 0;
+}
+
+.icons-container {
+  gap: 0.5rem;
+  display: flex;
+}
+
+.ul-items-container {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 1rem 0 2.1rem;
 }
 
 @media screen and (min-width: 800px) {

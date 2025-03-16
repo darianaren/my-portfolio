@@ -1,9 +1,13 @@
 import React, { memo, useCallback, useEffect } from "react";
 
+import parse from "html-react-parser";
 import { motion, AnimatePresence } from "framer-motion";
 
 import Portal from "../Portal/Portal";
+import ChipGroup from "../ChipGroup/ChipGroup";
+import codeIcon from "../../assets/icons/code.svg";
 import arrowButton from "../../assets/icons/arrow.svg";
+import deployIcon from "../../assets/icons/deploy.svg";
 
 import styles from "./styles.module.css";
 import { BACKDROP_OPTIONS, MODAL_OPTIONS } from "./constants";
@@ -13,7 +17,10 @@ const Modal = memo(
     title,
     image,
     video,
+    deploy,
+    github,
     onClose,
+    knowledge,
     techStack,
     description,
     KeyAccomplishments,
@@ -78,7 +85,38 @@ const Modal = memo(
                   style={{ cursor: "pointer" }}
                 />
 
-                <h2 className={styles.title}>{title}</h2>
+                <header className={styles.header}>
+                  <h2>{title}</h2>
+
+                  {deploy || github ? (
+                    <div className={styles["icons-container"]}>
+                      {github ? (
+                        <a href={github} target="_blank" rel="noreferrer">
+                          <img
+                            width={20}
+                            height={20}
+                            className="icon"
+                            src={codeIcon}
+                            alt="Ver código"
+                            style={{ cursor: "pointer" }}
+                          />
+                        </a>
+                      ) : null}
+                      {deploy ? (
+                        <a href={deploy} target="_blank" rel="noreferrer">
+                          <img
+                            width={20}
+                            height={20}
+                            className="icon"
+                            src={deployIcon}
+                            alt="Ir a la página"
+                            style={{ cursor: "pointer" }}
+                          />
+                        </a>
+                      ) : null}
+                    </div>
+                  ) : null}
+                </header>
 
                 {image ? (
                   <img width="100%" height="auto" src={image} alt={title} />
@@ -88,6 +126,37 @@ const Modal = memo(
                     <source src={video} type="video/mp4" />
                     Tu navegador no soporta el elemento de video.
                   </video>
+                ) : null}
+
+                <p style={{ margin: "1rem 0" }}>{parse(description)}</p>
+
+                {KeyAccomplishments ? (
+                  <>
+                    <h3 style={{ margin: "2rem 0 1rem 0" }}>
+                      Logros principales:
+                    </h3>
+                    <ul className={styles["ul-items-container"]}>
+                      {KeyAccomplishments.map((text) => (
+                        <li key={text} style={{ cursor: "default" }}>
+                          {parse(text)}
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                ) : null}
+
+                {techStack ? (
+                  <>
+                    <h3 style={{ margin: "2rem 0 1rem 0" }}>Tecnologías:</h3>
+                    <ChipGroup chips={techStack} padding />
+                  </>
+                ) : null}
+
+                {knowledge ? (
+                  <>
+                    <h3 style={{ margin: "2rem 0 1rem 0" }}>Conocimientos:</h3>
+                    <ChipGroup chips={knowledge} padding />
+                  </>
                 ) : null}
               </motion.div>
             </motion.div>
