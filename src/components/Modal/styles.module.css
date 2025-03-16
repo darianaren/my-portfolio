@@ -1,1 +1,52 @@
 @import "../../styles/variables.css";
+
+.backdrop {
+  position: fixed;
+  top: env(safe-area-inset-top);
+  right: env(safe-area-inset-right);
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  width: 100vw;
+  height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+
+  z-index: 1000;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  background-color: #6f5f5d83;
+}
+
+.modal {
+  position: relative;
+
+  height: 100vh;
+  padding: 1rem;
+  width: min(100vw, 70rem);
+
+  overflow-y: auto;
+  background-color: var(--white);
+}
+.modal::-webkit-scrollbar {
+  width: 0.4rem;
+
+  background: none;
+}
+.modal::-webkit-scrollbar-track {
+  background: none;
+}
+.modal::-webkit-scrollbar-thumb {
+  border-radius: 5rem;
+  background: var(--cream);
+}
+
+.title {
+  font-size: 1.75rem;
+}
+
+@media screen and (min-width: 700px) {
+  .modal {
+    padding: 2.5rem;
+  }
+}

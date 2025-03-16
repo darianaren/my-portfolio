@@ -7,10 +7,12 @@ import { MENU_ITEMS, MENU_PAGE, PAGE_VARIANTS } from "./constants";
 import Menu from "../../components/Menu/Menu";
 import CardGroup from "../../components/CardGroup/CardGroup";
 import PageWrapper from "../../templates/PageWrapper/PageWrapper";
+import Modal from "../../components/Modal/Modal";
 
 const Projects = () => {
   const [exitDirection, setExitDirection] = useState("left");
   const [selectedItem, setSelectedItem] = useState(MENU_ITEMS[0].index);
+  const [modal, setModal] = useState({ isOpen: false, data: {} });
 
   const handleSetSelectedItem = useCallback((current) => {
     setSelectedItem((prev) => {
@@ -21,9 +23,16 @@ const Projects = () => {
     });
   }, []);
 
+  const handleOpenModal = useCallback((data) => {
+    setModal({ isOpen: true, data });
+  }, []);
+  const handleCloseModal = useCallback(() => {
+    setModal({ isOpen: false, data: {} });
+  }, []);
+
   const { menuPage, divider, orientation } = useMemo(
-    () => MENU_PAGE[selectedItem],
-    [selectedItem]
+    () => MENU_PAGE(handleOpenModal)[selectedItem],
+    [selectedItem, handleOpenModal]
   );
 
   return (
@@ -48,6 +57,7 @@ const Projects = () => {
           </motion.div>
         </AnimatePresence>
       </div>
+      <Modal isOpen={modal.isOpen} {...modal.data} onClose={handleCloseModal} />
     </PageWrapper>
   );
 };
