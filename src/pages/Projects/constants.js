@@ -116,7 +116,16 @@ export const PROJECTS = (openModal) =>
       argsOnClick: {
         deploy: "https://react-tree-app-peach.vercel.app/",
         github: "https://github.com/darianaren/react-tree-app",
-
+        description:
+          "Aplicación web diseñada para mostrar una estructura jerárquica de navegación, permitiendo una experiencia fluida, intuitiva y visualmente atractiva. La aplicación está construida con React y Material-UI, ofreciendo una interfaz limpia y completamente responsiva que se adapta a dispositivos móviles y escritorios.<br /><br />El proyecto incluye una configuración de Storybook, que permite el desarrollo y prueba de componentes aislados, y una integración de Cypress para pruebas end-to-end (E2E). Además, la aplicación está preparada con GitHub Actions para integración continua, asegurando que los tests se ejecuten automáticamente en cada cambio realizado en el código.",
+        KeyAccomplishments: [
+          "<b>Desarrollé una estructura jerárquica de navegación</b> que permite a los usuarios interactuar con una interfaz intuitiva.",
+          "<b>Implementé una interfaz limpia y responsiva con Material-UI</b>, proporcionando una experiencia visualmente atractiva, adecuada para diferentes dispositivos.",
+          "<b>Configuré React Router para gestionar rutas de manera eficiente</b>, permitiendo la navegación entre diferentes secciones de la aplicación sin recargar la página.",
+          "<b>Integré Storybook en el proyecto</b>, facilitando el desarrollo y la documentación de los componentes de manera aislada, lo que mejora la mantenibilidad y escalabilidad del proyecto.",
+          "<b>Configuré Cypress para realizar pruebas end-to-end (E2E)</b>, asegurando que la aplicación funcione correctamente en todos los flujos de usuario, de manera automatizada y eficiente.",
+          "<b>Integré automatización con GitHub Actions</b>, configurando un flujo de trabajo para ejecutar pruebas automáticamente cada vez que se realiza un push o pull request en la rama principal del repositorio."
+        ],
         techStack: [
           { key: "techStack-1-1", label: "TypeScript" },
           { key: "techStack-1-2", label: "React JS" },
@@ -144,6 +153,15 @@ export const PROJECTS = (openModal) =>
       argsOnClick: {
         deploy: "https://drawing-app-liart.vercel.app/",
         github: "https://github.com/darianaren/drawing-app",
+        description:
+          "Aplicación de dibujo interactiva y responsiva que permite a los usuarios crear dibujos en un lienzo digital. Cuenta con herramientas fáciles de usar, como un pincel personalizable, borrado rápido y la opción de guardar tus creaciones como imágenes PNG.<br /><br />Desarrollada con Vue 3 y Vite, esta aplicación ofrece una experiencia de usuario fluida y rápida, adaptándose perfectamente a cualquier dispositivo gracias a su diseño responsivo.",
+        KeyAccomplishments: [
+          "<b>Creé una interfaz de usuario intuitiva</b> que permite a los usuarios dibujar en un lienzo digital, elegir el color y el tamaño del pincel de manera rápida y fácil.",
+          "<b>Implementé herramientas de personalización</b> para el tamaño y color del pincel, brindando a los usuarios un control total sobre su experiencia de dibujo.",
+          "<b>Implementé la funcionalidad de borrado rápido</b>, permitiendo a los usuarios limpiar el lienzo con un solo clic y empezar de nuevo sin complicaciones.",
+          "<b>Integré la opción de guardar el dibujo como una imagen PNG</b>, permitiendo que los usuarios descarguen y compartan sus creaciones con facilidad.",
+          "<b>Utilicé un diseño responsivo</b>, asegurando que la aplicación se adapte perfectamente a dispositivos de diferentes tamaños y resoluciones."
+        ],
         techStack: [
           { key: "techStack-2-1", label: "Vue 3" },
           { key: "techStack-2-2", label: "Vite" },
@@ -223,15 +241,19 @@ export const PROJECTS = (openModal) =>
         github: "https://github.com/darianaren/Work-Match",
         video:
           "https://res.cloudinary.com/dpzzxm1oc/video/upload/v1742151264/prkxkstmwwtsdlidx3ra.mp4",
+        description:
+          "Work Match es una aplicación diseñada para conectar a personas que necesitan realizar trabajos temporales con aquellos que buscan ofrecer su tiempo. Con trabajos que deben completarse en menos de 8 horas, como cortar césped, lavar coches, pasear perros o limpiar casas, esta plataforma facilita la búsqueda y publicación de tareas de forma rápida y eficaz.<br /><br />Con una experiencia de usuario intuitiva, Work Match permite a los usuarios filtrar ofertas según sus preferencias y postularse a trabajos cercanos o adecuados a sus habilidades. Además, puedes realizar ambas acciones (ofrecer y buscar trabajo) desde una sola cuenta, maximizando la flexibilidad y accesibilidad.",
         KeyAccomplishments: [
-          "<b>Desarrollé una aplicación de gestión de tareas</b> con React y Material UI, ofreciendo una interfaz moderna y fácil de usar para organizar tareas de manera eficiente.",
-          "<b>Implementé un sistema de filtrado combinado</b>, que permite buscar tareas de manera eficiente utilizando las etiquetas, estados y fechas de las mismas.",
-          "<b>Integré SWR (Stale-While-Revalidate)</b> para el manejo de datos remotos, mejorando el rendimiento al hacer fetch de las tareas y ofreciendo una experiencia de usuario más fluida y rápida.",
-          "<b>Implementé un diseño responsivo</b>, mejorando la experiencia del usuario en dispositivos móviles y de escritorio.",
-          "<b>Desarrollé una API REST</b>, proporcionando endpoints seguros y eficientes para la gestión de tareas.",
-          "<b>Implementé pruebas unitarias con Jest</b>, asegurando la fiabilidad de los endpoints y reduciendo errores en producción.",
-          "<b>Configuré ESLint y Prettier en el proyecto</b>, asegurando un código limpio, estandarizado y fácil de mantener.",
-          "<b>Apliqué principios de Clean Code y estructuración de responsabilidad única</b>, facilitando la escalabilidad y el mantenimiento del código a largo plazo."
+          "<b>Desarrollé una aplicación de página única (SPA)</b> utilizando la pila PERN (PostgreSQL, Express, React, Node.js), ofreciendo una experiencia de usuario fluida y rápida sin recargar la página.",
+          "<b>Implementé una API RESTful</b> que gestiona de forma eficiente las ofertas de trabajo, usuarios y pagos, permitiendo una interacción sin interrupciones entre el frontend y el backend.",
+          "<b>Integré autenticación y autorización de terceros con Auth0</b>, lo que permite a los usuarios registrarse, iniciar sesión y gestionar sus cuentas de manera segura y sencilla.",
+          "<b>Implementé una pasarela de pago con Stripe</b>, permitiendo a los usuarios realizar pagos seguros directamente en la plataforma para trabajos completados.",
+          "<b>Configuré almacenamiento en la nube</b> para la gestión y persistencia de datos, asegurando que toda la información esté accesible y segura.",
+          "<b>Implementé notificaciones por correo electrónico</b> para mantener a los usuarios actualizados sobre el estado de sus ofertas o postulaciones, mejorando la experiencia general de uso.",
+          "<b>Desarrollé una funcionalidad de eliminación lógica</b>, garantizando que los usuarios puedan eliminar sus publicaciones de trabajo sin perder información valiosa.",
+          "<b>Optimizé la forma de búsqueda y filtrado combinado</b>, lo que permite a los usuarios encontrar trabajos específicos rápidamente, mejorando la eficiencia y rapidez de la aplicación.",
+          "<b>Apliqué estilos utilizando módulos CSS</b>, asegurando un diseño limpio, moderno y fácilmente mantenible para una experiencia visual consistente.",
+          "<b>Diseñé e implementé un formulario controlado y optimizado</b>, incorporando validaciones en tiempo real, mejorando la experiencia de usuario y reduciendo errores de entrada."
         ],
         techStack: [
           { key: "techStack-4-1", label: "JavaScript" },
@@ -279,6 +301,7 @@ export const PROJECTS = (openModal) =>
           "<b>Desarrollé una interfaz intuitiva con React</b>, permitiendo a los usuarios ver, guardar y buscar recetas de otros usuarios.",
           "<b>Optimizé la experiencia de usuario con una interfaz responsiva</b> usando CSS Modules, garantizando el acceso fácil y fluido desde cualquier dispositivo.",
           "<b>Manejé el estado global con Redux</b>, facilitando la gestión de configuraciones de la aplicación como el cambio de tema (claro/oscuro) y la activación/desactivación de música de fondo, mejorando la experiencia del usuario.",
+          "<b>Diseñé e implementé un formulario controlado y optimizado</b>, mejorando la experiencia de usuario y reduciendo errores de entrada.",
           "<b>Utilicé axios para realizar solicitudes HTTP al backend</b>, garantizando la eficiencia en el manejo de datos de recetas y usuarios."
         ],
         techStack: [
