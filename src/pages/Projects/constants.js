@@ -153,6 +153,8 @@ export const PROJECTS = (openModal) =>
       argsOnClick: {
         deploy: "https://drawing-app-liart.vercel.app/",
         github: "https://github.com/darianaren/drawing-app",
+        video:
+          "https://res.cloudinary.com/dpzzxm1oc/video/upload/v1742164445/xpce9hp9svsdqi9znmhc.mp4",
         description:
           "Aplicación de dibujo interactiva y responsiva que permite a los usuarios crear dibujos en un lienzo digital. Cuenta con herramientas fáciles de usar, como un pincel personalizable, borrado rápido y la opción de guardar tus creaciones como imágenes PNG.<br /><br />Desarrollada con Vue 3 y Vite, esta aplicación ofrece una experiencia de usuario fluida y rápida, adaptándose perfectamente a cualquier dispositivo gracias a su diseño responsivo.",
         KeyAccomplishments: [

@@ -9,19 +9,18 @@ const BACKDROP_VARIANTS = Object.freeze({
 
 const MODAL_VARIANTS = Object.freeze({
   hidden: {
-    scale: 0,
+    x: 100,
     opacity: 0
   },
   visible: {
-    scale: 1,
+    x: 0,
     opacity: 1
   }
 });
 
 const TRANSITION = Object.freeze({
-  durarion: "0.4s",
-  property: "opacity scale",
-  timingFunction: "linear"
+  duration: 0.6,
+  ease: "easeInOut"
 });
 
 export const BACKDROP_OPTIONS = Object.freeze({

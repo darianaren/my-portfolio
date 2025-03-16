@@ -1,5 +1,12 @@
 @import "../../styles/variables.css";
 
+.wrapper {
+  top: 0;
+  position: sticky;
+
+  z-index: 10;
+}
+
 .ul-items-container {
   left: -1rem;
   position: relative;

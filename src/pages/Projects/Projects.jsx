@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import { MENU_ITEMS, MENU_PAGE, PAGE_VARIANTS } from "./constants";
 
-import Menu from "../../components/Menu/Menu";
 import Modal from "../../components/Modal/Modal";
 import CardGroup from "../../components/CardGroup/CardGroup";
 import PageWrapper from "../../templates/PageWrapper/PageWrapper";
@@ -36,27 +35,29 @@ const Projects = () => {
   );
 
   return (
-    <PageWrapper title="Experiencia y proyectos">
-      <Menu items={MENU_ITEMS} setSelectedItem={handleSetSelectedItem} />
-      <div className="relative overflow-hidden">
-        <AnimatePresence custom={exitDirection} mode="wait">
-          <motion.div
-            exit="exit"
-            initial="enter"
-            animate="center"
-            key={selectedItem}
-            custom={exitDirection}
-            variants={PAGE_VARIANTS}
-            transition={{ duration: 0.5 }}
-          >
-            <CardGroup
-              cards={menuPage}
-              divider={divider}
-              orientation={orientation}
-            />
-          </motion.div>
-        </AnimatePresence>
-      </div>
+    <PageWrapper
+      borderBlur
+      menu={MENU_ITEMS}
+      setMenu={handleSetSelectedItem}
+      title="Experiencia y proyectos"
+    >
+      <AnimatePresence custom={exitDirection} mode="wait">
+        <motion.div
+          exit="exit"
+          initial="enter"
+          animate="center"
+          key={selectedItem}
+          custom={exitDirection}
+          variants={PAGE_VARIANTS}
+          transition={{ duration: 0.5 }}
+        >
+          <CardGroup
+            cards={menuPage}
+            divider={divider}
+            orientation={orientation}
+          />
+        </motion.div>
+      </AnimatePresence>
       <Modal isOpen={modal.isOpen} {...modal.data} onClose={handleCloseModal} />
     </PageWrapper>
   );

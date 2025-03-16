@@ -6,8 +6,16 @@ import styles from "./styles.module.css";
 import { PAGE_VARIANTS } from "./constants";
 
 import { useExitDirection } from "../../context/ExitDirectionContext";
+import Menu from "../../components/Menu/Menu";
 
-const PageWrapper = ({ fullHeight, borderBlur, title, children }) => {
+const PageWrapper = ({
+  fullHeight,
+  borderBlur,
+  title,
+  menu,
+  setMenu,
+  children
+}) => {
   const { exitDirection } = useExitDirection();
 
   return (
@@ -20,10 +28,19 @@ const PageWrapper = ({ fullHeight, borderBlur, title, children }) => {
       style={{ position: "absolute", width: "100%", height: "100%" }}
     >
       {title ? <h1 className={styles.title}>{title}</h1> : null}
+      {menu && setMenu ? (
+        <header className={`${styles["menu-wrapper"]}`}>
+          <Menu items={menu} setSelectedItem={setMenu} />
+        </header>
+      ) : null}
       <section
-        className={`${styles["section-wrapper"]} ${
-          borderBlur ? styles["border-blur"] : ""
-        } ${fullHeight ? styles["full-height"] : ""}`}
+        className={`${
+          menu && setMenu
+            ? styles["section-menu-wrapper"]
+            : styles["section-wrapper"]
+        } ${borderBlur ? styles["border-blur"] : ""} ${
+          fullHeight ? styles["full-height"] : ""
+        }`}
       >
         {children}
       </section>
