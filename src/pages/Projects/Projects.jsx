@@ -5,9 +5,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { MENU_ITEMS, MENU_PAGE, PAGE_VARIANTS } from "./constants";
 
 import Menu from "../../components/Menu/Menu";
+import Modal from "../../components/Modal/Modal";
 import CardGroup from "../../components/CardGroup/CardGroup";
 import PageWrapper from "../../templates/PageWrapper/PageWrapper";
-import Modal from "../../components/Modal/Modal";
 
 const Projects = () => {
   const [exitDirection, setExitDirection] = useState("left");

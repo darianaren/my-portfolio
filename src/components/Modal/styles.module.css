@@ -43,10 +43,17 @@
 
 .title {
   font-size: 1.75rem;
+  margin: 1rem 0;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .modal {
-    padding: 2.5rem;
+    padding: 3.5rem 5rem;
+  }
+}
+
+@media screen and (min-width: 1220px) {
+  .modal {
+    padding: 3.5rem 10rem;
   }
 }

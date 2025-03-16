@@ -79,6 +79,16 @@ const Modal = memo(
                 />
 
                 <h2 className={styles.title}>{title}</h2>
+
+                {image ? (
+                  <img width="100%" height="auto" src={image} alt={title} />
+                ) : null}
+                {video ? (
+                  <video width="100%" height="auto" controls autoPlay>
+                    <source src={video} type="video/mp4" />
+                    Tu navegador no soporta el elemento de video.
+                  </video>
+                ) : null}
               </motion.div>
             </motion.div>
           ) : null}

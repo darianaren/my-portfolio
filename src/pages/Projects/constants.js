@@ -45,26 +45,6 @@ export const EXPERIENCES = (openModal) =>
       subtitle: "Abril 2023 - Actual",
       description:
         "Optimización y desarrollo de funcionalidades en un sistema de transporte multimodal. Integración de Google Maps. Refactorización de código. Seguridad con Firebase y autenticación JWT. Implementación de notificaciones push y monitoreo con Sentry.",
-      argsOnClick: {
-        title: "OWO App",
-        image: experienceOwoApp,
-        description: "",
-        KeyAccomplishments: [],
-        techStack: [
-          { key: "experience-1-1", label: "JavaScript" },
-          { key: "experience-1-2", label: "TypeScript" },
-          { key: "experience-1-3", label: "React JS" },
-          { key: "experience-1-4", label: "Next JS" },
-          { key: "experience-1-5", label: "Vite" },
-          { key: "experience-1-6", label: "Vitest" },
-          { key: "experience-1-7", label: "React Testing Library" },
-          { key: "experience-1-8", label: "Node JS" },
-          { key: "experience-1-9", label: "Express JS" },
-          { key: "experience-1-10", label: "Firebase" },
-          { key: "experience-1-11", label: "Google Cloud Functions" },
-          { key: "experience-1-12", label: "CI/CD con GitHub Actions" }
-        ]
-      },
       labels: [
         { key: "experience-1-1", label: "JavaScript" },
         { key: "experience-1-2", label: "TypeScript" },
@@ -78,7 +58,10 @@ export const EXPERIENCES = (openModal) =>
         { key: "experience-1-10", label: "Firebase" },
         { key: "experience-1-11", label: "Google Cloud Functions" },
         { key: "experience-1-12", label: "CI/CD con GitHub Actions" }
-      ]
+      ],
+      argsOnClick: {
+        image: experienceOwoApp
+      }
     }
   ]);
 
@@ -100,7 +83,8 @@ export const PROJECTS = (openModal) =>
         { key: "project-2-5", label: "Cypress" },
         { key: "project-2-6", label: "Storybook" },
         { key: "project-2-7", label: "CI con GitHub Actions" }
-      ]
+      ],
+      argsOnClick: {}
     },
     {
       onClick: openModal,
@@ -114,7 +98,8 @@ export const PROJECTS = (openModal) =>
         { key: "project-3-1", label: "Vue 3" },
         { key: "project-3-2", label: "Vite" },
         { key: "project-3-3", label: "HTML" }
-      ]
+      ],
+      argsOnClick: {}
     },
     {
       onClick: openModal,
@@ -133,7 +118,8 @@ export const PROJECTS = (openModal) =>
         { key: "project-1-6", label: "Node JS" },
         { key: "project-1-7", label: "Express JS" },
         { key: "project-1-8", label: "SQLite y SQLite3" }
-      ]
+      ],
+      argsOnClick: {}
     },
     {
       onClick: openModal,
@@ -156,7 +142,11 @@ export const PROJECTS = (openModal) =>
         { key: "project-4-10", label: "Sequelize" },
         { key: "project-4-11", label: "Docker" },
         { key: "project-4-12", label: "Stripe" }
-      ]
+      ],
+      argsOnClick: {
+        video:
+          "https://res.cloudinary.com/dpzzxm1oc/video/upload/v1742151264/prkxkstmwwtsdlidx3ra.mp4"
+      }
     },
     {
       onClick: openModal,
@@ -174,7 +164,11 @@ export const PROJECTS = (openModal) =>
         { key: "project-5-5", label: "Node JS" },
         { key: "project-5-6", label: "Express JS" },
         { key: "project-5-7", label: "Sequelize" }
-      ]
+      ],
+      argsOnClick: {
+        video:
+          "https://res.cloudinary.com/dpzzxm1oc/video/upload/v1742151134/rwdcxxsuvb3tl8294rbf.mp4"
+      }
     }
   ]);
 
@@ -199,7 +193,10 @@ export const CERTIFICATES = (openModal) =>
       title: "Full Stack Web Developer",
       subtitle: "Febrero 2023",
       image: certificateFullStack,
-      description: "JavaScript - HTML - CSS - Node JS - React JS - Redux - SQL"
+      description: "JavaScript - HTML - CSS - Node JS - React JS - Redux - SQL",
+      argsOnClick: {
+        image: certificateFullStack
+      }
     },
     {
       onClick: openModal,
@@ -207,7 +204,10 @@ export const CERTIFICATES = (openModal) =>
       title: "Reconocimiento Henry Hero",
       subtitle: "Febrero 2023",
       image: certificateHenryHero,
-      description: "Docencia"
+      description: "Docencia",
+      argsOnClick: {
+        image: certificateHenryHero
+      }
     }
   ]);
 
