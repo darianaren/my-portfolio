@@ -116,6 +116,7 @@ export const PROJECTS = (openModal) =>
       argsOnClick: {
         deploy: "https://react-tree-app-peach.vercel.app/",
         github: "https://github.com/darianaren/react-tree-app",
+
         techStack: [
           { key: "techStack-1-1", label: "TypeScript" },
           { key: "techStack-1-2", label: "React JS" },
@@ -166,10 +167,23 @@ export const PROJECTS = (openModal) =>
         { key: "project-3-5", label: "Material-UI" },
         { key: "project-3-6", label: "Node JS" },
         { key: "project-3-7", label: "Express JS" },
-        { key: "project-3-8", label: "SQLite y SQLite3" }
+        { key: "project-3-8", label: "SQLite y SQLite3" },
+        { key: "project-3-8", label: "Jest" }
       ],
       argsOnClick: {
         github: "https://github.com/darianaren/task-management",
+        description:
+          "Esta aplicación de gestión de tareas extá diseñada para mejorar la productividad y organización de los usuarios. Ofrece una interfaz moderna e intuitiva donde los usuarios pueden crear, editar y organizar sus tareas de manera eficiente. Cada tarea cuenta con etiquetas personalizadas, título, descripción y fecha de entrega, lo que permite una categorización flexible y una mejor administración del flujo de trabajo.<br /><br />Además, la aplicación permite filtrar y visualizar tareas de manera dinámica, brindando una experiencia fluida y centrada en la eficiencia. Con un diseño responsivo, que garantiza una experiencia de usuario óptima tanto en escritorio como en móvil.",
+        KeyAccomplishments: [
+          "<b>Desarrollé una aplicación de gestión de tareas</b> con React y Material UI, ofreciendo una interfaz moderna y fácil de usar para organizar tareas de manera eficiente.",
+          "<b>Implementé un sistema de filtrado combinado</b>, que permite buscar tareas de manera eficiente utilizando las etiquetas, estados y fechas de las mismas.",
+          "<b>Integré SWR (Stale-While-Revalidate)</b> para el manejo de datos remotos, mejorando el rendimiento al hacer fetch de las tareas y ofreciendo una experiencia de usuario más fluida y rápida.",
+          "<b>Implementé un diseño responsivo</b>, mejorando la experiencia del usuario en dispositivos móviles y de escritorio.",
+          "<b>Desarrollé una API REST</b>, proporcionando endpoints seguros y eficientes para la gestión de tareas.",
+          "<b>Implementé pruebas unitarias con Jest</b>, asegurando la fiabilidad de los endpoints y reduciendo errores en producción.",
+          "<b>Configuré ESLint y Prettier en el proyecto</b>, asegurando un código limpio, estandarizado y fácil de mantener.",
+          "<b>Apliqué principios de Clean Code y estructuración de responsabilidad única</b>, facilitando la escalabilidad y el mantenimiento del código a largo plazo."
+        ],
         techStack: [
           { key: "techStack-3-1", label: "TypeScript" },
           { key: "techStack-3-2", label: "React JS" },
@@ -178,7 +192,8 @@ export const PROJECTS = (openModal) =>
           { key: "techStack-3-5", label: "Material-UI" },
           { key: "techStack-3-6", label: "Node JS" },
           { key: "techStack-3-7", label: "Express JS" },
-          { key: "techStack-3-8", label: "SQLite y SQLite3" }
+          { key: "techStack-3-8", label: "SQLite y SQLite3" },
+          { key: "techStack-3-8", label: "Jest" }
         ]
       }
     },
@@ -208,6 +223,16 @@ export const PROJECTS = (openModal) =>
         github: "https://github.com/darianaren/Work-Match",
         video:
           "https://res.cloudinary.com/dpzzxm1oc/video/upload/v1742151264/prkxkstmwwtsdlidx3ra.mp4",
+        KeyAccomplishments: [
+          "<b>Desarrollé una aplicación de gestión de tareas</b> con React y Material UI, ofreciendo una interfaz moderna y fácil de usar para organizar tareas de manera eficiente.",
+          "<b>Implementé un sistema de filtrado combinado</b>, que permite buscar tareas de manera eficiente utilizando las etiquetas, estados y fechas de las mismas.",
+          "<b>Integré SWR (Stale-While-Revalidate)</b> para el manejo de datos remotos, mejorando el rendimiento al hacer fetch de las tareas y ofreciendo una experiencia de usuario más fluida y rápida.",
+          "<b>Implementé un diseño responsivo</b>, mejorando la experiencia del usuario en dispositivos móviles y de escritorio.",
+          "<b>Desarrollé una API REST</b>, proporcionando endpoints seguros y eficientes para la gestión de tareas.",
+          "<b>Implementé pruebas unitarias con Jest</b>, asegurando la fiabilidad de los endpoints y reduciendo errores en producción.",
+          "<b>Configuré ESLint y Prettier en el proyecto</b>, asegurando un código limpio, estandarizado y fácil de mantener.",
+          "<b>Apliqué principios de Clean Code y estructuración de responsabilidad única</b>, facilitando la escalabilidad y el mantenimiento del código a largo plazo."
+        ],
         techStack: [
           { key: "techStack-4-1", label: "JavaScript" },
           { key: "techStack-4-2", label: "React JS" },
@@ -245,6 +270,17 @@ export const PROJECTS = (openModal) =>
         github: "https://github.com/darianaren/my-cookbook",
         video:
           "https://res.cloudinary.com/dpzzxm1oc/video/upload/v1742151134/rwdcxxsuvb3tl8294rbf.mp4",
+        description:
+          "Plataforma de Recetas Interactivas donde los usuarios pueden publicar y guardar sus recetas favoritas. La aplicación permite a los usuarios registrarse, iniciar sesión, y editar su perfil. Además de publicar, modificar y eliminar recetas propias, también pueden explorar y guardar las recetas de otros usuarios, manteniéndolas siempre a mano.<br /><br />Con un diseño intuitivo y responsivo, la aplicación se adapta a cualquier dispositivo, brindando una experiencia fluida tanto en móviles como en escritorios. De igual forma, los usuarios pueden disfrutar de un tema claro u oscuro según su preferencia y activar música para acompañar su experiencia en la cocina.",
+        KeyAccomplishments: [
+          "<b>Desarrollé una API RESTful con Express JS</b>, permitiendo a los usuarios gestionar recetas y perfiles de manera segura.",
+          "<b>Implementé un sistema de autenticación con bcryptjs</b>, asegurando que los usuarios puedan registrarse e iniciar sesión de manera segura.",
+          "<b>Desarrollé filtros avanzados de búsqueda con opciones combinadas</b>, permitiendo a los usuarios encontrar recetas según criterios específicos como nombre, tipo de dieta y/o tiempo de preparación, entre otros.",
+          "<b>Desarrollé una interfaz intuitiva con React</b>, permitiendo a los usuarios ver, guardar y buscar recetas de otros usuarios.",
+          "<b>Optimizé la experiencia de usuario con una interfaz responsiva</b> usando CSS Modules, garantizando el acceso fácil y fluido desde cualquier dispositivo.",
+          "<b>Manejé el estado global con Redux</b>, facilitando la gestión de configuraciones de la aplicación como el cambio de tema (claro/oscuro) y la activación/desactivación de música de fondo, mejorando la experiencia del usuario.",
+          "<b>Utilicé axios para realizar solicitudes HTTP al backend</b>, garantizando la eficiencia en el manejo de datos de recetas y usuarios."
+        ],
         techStack: [
           { key: "techStack-5-1", label: "JavaScript" },
           { key: "techStack-5-2", label: "React JS" },
@@ -283,7 +319,7 @@ export const CERTIFICATES = (openModal) =>
       argsOnClick: {
         image: certificateFullStack,
         description:
-          "Henry es un bootcamp enfocado en educar a sus estudiantes en carreras de tecnología, brindandoles más de 800 horas de práctica y desarrollando el aprendizaje autónomo.<br /><br />Este curso me ha brindado un entrenamiento intensivo en el que he adquirido numerosos conocimientos de las últimas tecnologías y lenguajes de programación, principalmente JavaScript, HTML, CSS, React JS, Node JS, Express y SQL.<br /><br />Así mismo, me brindó la oportunidad de construir, tanto de forma individual, como en equipo, proyectos del mundo real con metodologías y herramientas ágiles (Scrum), bajo aprendizajes colaborativos, autónomos y continuos.",
+          "Henry es un bootcamp enfocado en educar a sus estudiantes en carreras de tecnología, brindandoles más de 800 horas de práctica y desarrollando el aprendizaje autónomo.<br /><br />Este curso me ha brindado una capacitación intensiva en la que he adquirido numerosos conocimientos de las últimas tecnologías y lenguajes de programación, principalmente JavaScript, HTML, CSS, React JS, Node JS, Express y SQL.<br /><br />Así mismo, me brindó la oportunidad de construir, tanto de forma individual, como en equipo, proyectos del mundo real con metodologías y herramientas ágiles (Scrum), bajo aprendizajes colaborativos, autónomos y continuos.",
         knowledge: [
           { key: "knowledge-2-1", label: "JavaScript" },
           { key: "knowledge-2-2", label: "HTML" },
