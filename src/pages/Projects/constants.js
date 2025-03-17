@@ -116,6 +116,8 @@ export const PROJECTS = (openModal) =>
       argsOnClick: {
         deploy: "https://react-tree-app-peach.vercel.app/",
         github: "https://github.com/darianaren/react-tree-app",
+        video:
+          "https://res.cloudinary.com/dpzzxm1oc/video/upload/v1742168341/mequju2udovehy82xp2l.mp4",
         description:
           "Aplicación web diseñada para mostrar una estructura jerárquica de navegación, permitiendo una experiencia fluida, intuitiva y visualmente atractiva. La aplicación está construida con React y Material-UI, ofreciendo una interfaz limpia y completamente responsiva que se adapta a dispositivos móviles y escritorios.<br /><br />El proyecto incluye una configuración de Storybook, que permite el desarrollo y prueba de componentes aislados, y una integración de Cypress para pruebas end-to-end (E2E). Además, la aplicación está preparada con GitHub Actions para integración continua, asegurando que los tests se ejecuten automáticamente en cada cambio realizado en el código.",
         KeyAccomplishments: [
@@ -192,6 +194,8 @@ export const PROJECTS = (openModal) =>
       ],
       argsOnClick: {
         github: "https://github.com/darianaren/task-management",
+        video:
+          "https://res.cloudinary.com/dpzzxm1oc/video/upload/v1742171284/dkbrhtmj3eb9cmkjynds.mp4",
         description:
           "Esta aplicación de gestión de tareas extá diseñada para mejorar la productividad y organización de los usuarios. Ofrece una interfaz moderna e intuitiva donde los usuarios pueden crear, editar y organizar sus tareas de manera eficiente. Cada tarea cuenta con etiquetas personalizadas, título, descripción y fecha de entrega, lo que permite una categorización flexible y una mejor administración del flujo de trabajo.<br /><br />Además, la aplicación permite filtrar y visualizar tareas de manera dinámica, brindando una experiencia fluida y centrada en la eficiencia. Con un diseño responsivo, que garantiza una experiencia de usuario óptima tanto en escritorio como en móvil.",
         KeyAccomplishments: [
