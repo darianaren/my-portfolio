@@ -9,8 +9,8 @@
   align-items: center;
   justify-content: flex-end;
 
-  width: 100vw;
-  height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+  width: 100dvw;
+  height: calc(100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
 
   z-index: 1000;
   overflow: hidden;
@@ -21,9 +21,9 @@
 .modal {
   position: relative;
 
-  height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+  height: calc(100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
   padding: 1rem;
-  width: min(100vw, 70rem);
+  width: min(100dvw, 70rem);
 
   overflow-y: auto;
   background-color: var(--white);

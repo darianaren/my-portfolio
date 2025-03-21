@@ -1,33 +1,33 @@
 const VARIABLES_BG_SHAPE_1 = Object.freeze({
-  top: "10vh",
-  left: "75vw",
-  width: "15vw",
-  height: "15vw"
+  top: "10dvh",
+  left: "75dvw",
+  width: "15dvw",
+  height: "15dvw"
 });
 
 const VARIABLES_BG_SHAPE_2 = Object.freeze({
-  top: "85vh",
-  left: "50vw",
-  width: "20vw",
-  height: "20vw"
+  top: "85dvh",
+  left: "50dvw",
+  width: "20dvw",
+  height: "20dvw"
 });
 const VARIABLES_BG_SHAPE_3 = Object.freeze({
-  top: "70vh",
-  left: "10vw",
-  width: "25vw",
-  height: "25vw"
+  top: "70dvh",
+  left: "10dvw",
+  width: "25dvw",
+  height: "25dvw"
 });
 const VARIABLES_BG_SHAPE_4 = Object.freeze({
-  top: "-7vw",
-  left: "-7vw",
-  width: "30vw",
-  height: "30vw"
+  top: "-7dvw",
+  left: "-7dvw",
+  width: "30dvw",
+  height: "30dvw"
 });
 const VARIABLES_BG_SHAPE_5 = Object.freeze({
-  top: "60vh",
-  left: "70vw",
-  width: "35vw",
-  height: "35vw"
+  top: "60dvh",
+  left: "70dvw",
+  width: "35dvw",
+  height: "35dvw"
 });
 
 export const BG_SHAPES = Object.freeze([

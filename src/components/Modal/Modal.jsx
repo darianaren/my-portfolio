@@ -47,7 +47,7 @@ const Modal = memo(
       if (isOpen) {
         document.body.style.overflow = "hidden";
         document.body.style.height =
-          "calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom))";
+          "calc(100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom))";
 
         const modal = document.getElementById(idTitle);
         modal && modal.focus();

@@ -3,9 +3,9 @@
 .wrapper {
   position: relative;
 
-  width: calc(100vw - 2rem);
+  width: calc(100dvw - 2rem);
   height: calc(
-    100vh - 4rem - env(safe-area-inset-top) - env(safe-area-inset-bottom)
+    100dvh - 4rem - env(safe-area-inset-top) - env(safe-area-inset-bottom)
   );
 
   inset: 1rem;
@@ -15,9 +15,9 @@
 
 @media screen and (orientation: landscape) and (min-width: 1000px) {
   .wrapper {
-    width: calc(100vw - 8rem);
+    width: calc(100dvw - 8rem);
     height: calc(
-      100vh - 8rem - env(safe-area-inset-top) - env(safe-area-inset-bottom)
+      100dvh - 8rem - env(safe-area-inset-top) - env(safe-area-inset-bottom)
     );
 
     inset: 4rem;

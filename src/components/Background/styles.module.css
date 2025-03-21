@@ -31,8 +31,8 @@
 }
 
 .wrapper {
-  width: 100vw;
-  height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+  width: 100dvw;
+  height: calc(100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
 
   z-index: -1;
 
