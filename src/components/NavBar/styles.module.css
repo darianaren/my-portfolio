@@ -92,7 +92,7 @@
 
 @media screen and (orientation: landscape) and (min-width: 1000px) {
   .nav-container {
-    bottom: 50vh;
+    bottom: calc(50vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
     left: 2.65rem;
 
     padding: 1rem 0.25rem;

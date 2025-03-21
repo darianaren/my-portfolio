@@ -46,7 +46,8 @@ const Modal = memo(
     useEffect(() => {
       if (isOpen) {
         document.body.style.overflow = "hidden";
-        document.body.style.height = "100vh";
+        document.body.style.height =
+          "calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom))";
 
         const modal = document.getElementById(idTitle);
         modal && modal.focus();
