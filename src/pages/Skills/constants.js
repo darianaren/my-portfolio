@@ -22,8 +22,9 @@ export const BACKEND_SKILLS = Object.freeze([
   { key: "backend-3", label: "PostgreSQL" },
   { key: "backend-4", label: "Sequelize" },
   { key: "backend-5", label: "Firebase" },
-  { key: "backend-6", label: "Typesense" },
-  { key: "backend-7", label: "BigQuery" },
+  { key: "backend-6", label: "Strapi" },
+  { key: "backend-7", label: "Typesense" },
+  { key: "backend-8", label: "BigQuery" },
   { key: "backend-9", label: "Google Cloud Functions" }
 ]);
 
@@ -31,7 +32,8 @@ export const TECHNOLOGIES_SKILLS = Object.freeze([
   { key: "technologies-1", label: "Git" },
   { key: "technologies-2", label: "GitHub" },
   { key: "technologies-3", label: "CI/CD con GitHub Actions" },
-  { key: "technologies-4", label: "Figma" }
+  { key: "technologies-4", label: "Figma" },
+  { key: "technologies-6", label: "Cursor (Build Software)" }
 ]);
 
 export const SOFT_SKILLS = Object.freeze([

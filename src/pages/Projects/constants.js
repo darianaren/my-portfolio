@@ -1,6 +1,7 @@
 import certificateEfset from "../../assets/images/certificate-efset.png";
 import certificateFullStack from "../../assets/images/certificate-full-stack.png";
 import certificateHenryHero from "../../assets/images/certificate-henry-hero.png";
+import experienceLocalMovers from "../../assets/images/experience-localmovers.png";
 import experienceOwoApp from "../../assets/images/experience-owo-app.png";
 import projectCookbook from "../../assets/images/project-cookbook.png";
 import projectDrawingApp from "../../assets/images/project-drawing-app.png";
@@ -39,10 +40,50 @@ export const EXPERIENCES = (openModal) =>
   Object.freeze([
     {
       onClick: openModal,
+      title: "LocalMovers.com",
+      key: "experience-localmovers",
+      image: experienceLocalMovers,
+      subtitle: "Abril 2025 - Actual",
+      description:
+        "Desarrollo frontend enfocado en SEO técnico y performance para una plataforma de servicios de mudanza. Optimización con Next.js, integración con Strapi y trabajo con base de datos relacional.",
+      labels: [
+        { key: "experience-2-1", label: "React JS" },
+        { key: "experience-2-2", label: "Next JS" },
+        { key: "experience-2-3", label: "TypeScript" },
+        { key: "experience-2-4", label: "Strapi" },
+        { key: "experience-2-5", label: "PostgreSQL" },
+        { key: "experience-2-6", label: "Sequelize" },
+      ],
+      argsOnClick: {
+        image: experienceLocalMovers,
+        description:
+          "Plataforma digital orientada a la contratación de servicios de mudanza, enfocada en la mejora del SEO y el aumento del tráfico orgánico mediante optimizaciones en rendimiento, estructura y renderizado del sitio.",
+        KeyAccomplishments: [
+          "<b>Desarrollé interfaces con React y Next.js</b>, utilizando renderizado del lado del servidor (SSR) y generación estática para mejorar la indexación en buscadores.",
+          "<b>Implementé mejoras de SEO técnico</b>, trabajando sobre metadata, estructura de páginas y performance para aumentar la visibilidad orgánica del sitio.",
+          "<b>Optimicé el rendimiento del frontend</b>, reduciendo tiempos de carga y mejorando métricas clave relacionadas con experiencia de usuario.",
+          "<b>Integré Strapi como CMS headless</b>, consumiendo APIs para la gestión dinámica de contenidos optimizados para SEO.",
+          "<b>Trabajé con PostgreSQL y Sequelize</b> en la definición y consumo de modelos de datos, asegurando consistencia y eficiencia en las consultas.",
+          "<b>Apliqué buenas prácticas de código limpio y componentes reutilizables</b>, mejorando la mantenibilidad y escalabilidad del proyecto.",
+          "<b>Colaboré activamente con el equipo</b> en revisiones de código y planificación técnica, alineando desarrollo frontend con objetivos de negocio y marketing."
+        ],
+        techStack: [
+          { key: "techStack-2-1", label: "React JS" },
+          { key: "techStack-2-2", label: "Next JS" },
+          { key: "techStack-2-3", label: "TypeScript" },
+          { key: "techStack-2-4", label: "Strapi" },
+          { key: "techStack-2-5", label: "PostgreSQL" },
+          { key: "techStack-2-6", label: "Sequelize" },
+          { key: "techStack-2-7", label: "SEO Técnico" }
+        ]
+      }
+    },
+    {
+      onClick: openModal,
       title: "OWO App",
       key: "experience-owo",
       image: experienceOwoApp,
-      subtitle: "Abril 2023 - Actual",
+      subtitle: "Abril 2023 - Abril 2025",
       description:
         "Optimización y desarrollo de funcionalidades en un sistema de transporte multimodal. Integración de Google Maps. Refactorización de código. Seguridad con Firebase y autenticación JWT. Implementación de notificaciones push y monitoreo con Sentry.",
       labels: [
