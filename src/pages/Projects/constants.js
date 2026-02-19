@@ -1,6 +1,7 @@
 import certificateEfset from "../../assets/images/certificate-efset.png";
 import certificateFullStack from "../../assets/images/certificate-full-stack.png";
 import certificateHenryHero from "../../assets/images/certificate-henry-hero.png";
+import certificateUdemy from "../../assets/images/certificate-udemy-vue-js-2.jpg";
 import experienceLocalMovers from "../../assets/images/experience-localmovers.png";
 import experienceOwoApp from "../../assets/images/experience-owo-app.png";
 import projectCookbook from "../../assets/images/project-cookbook.png";
@@ -366,6 +367,19 @@ export const PROJECTS = (openModal) =>
 
 export const CERTIFICATES = (openModal) =>
   Object.freeze([
+    {
+      onClick: () =>
+        window.open(
+          "https://www.udemy.com/certificate/UC-f46e45db-751d-46bc-9ba9-30dca8c03522/",
+          "_blank",
+          "noreferrer"
+        ),
+      key: "certificate-udemy-vue-js-2",
+      title: "Vue JS 2",
+      subtitle: "Febrero 2026",
+      image: certificateUdemy,
+      description: "Template - Directivas y reactividad - Componentes y comunicación entre componentes - Ciclo de vida - Enrutamiento (Vue Router)"
+    },
     {
       onClick: () =>
         window.open(

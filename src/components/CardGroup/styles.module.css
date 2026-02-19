@@ -2,19 +2,19 @@
 
 .wrapper.vertical {
   gap: 1rem;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
 
-.wrapper.vertical > .card {
-  flex-grow: 1;
-
-  min-width: min(19rem, 100%);
-  width: calc((100% / 3) - 0.7rem);
+@media screen and (min-width: 480px) {
+  .wrapper.vertical {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-@media screen and (min-width: 696px) {
-  .wrapper.vertical > .card {
-    max-width: calc(50% - 0.25rem);
+@media screen and (min-width: 768px) {
+  .wrapper.vertical {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
