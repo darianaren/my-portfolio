@@ -3,34 +3,34 @@ import homeIcon from "../../assets/icons/home.svg";
 import skillsIcon from "../../assets/icons/skills.svg";
 import contactIcon from "../../assets/icons/contact.svg";
 import projectsIcon from "../../assets/icons/projects.svg";
-import pdf from "../../assets/pdf/Dariana Rengifo - Full Stack Developer.pdf";
+import pdf from "../../assets/pdf/Dariana_Rengifo_Web_Developer.pdf";
 
 export const NAV_ITEMS = Object.freeze([
   {
     to: "/",
     icon: homeIcon,
-    label: "Inicio"
+    label: "Inicio",
   },
   {
     to: "/skills",
     icon: skillsIcon,
-    label: "Conocimientos"
+    label: "Conocimientos",
   },
   {
     to: "/projects",
     icon: projectsIcon,
-    label: "Experiencia"
+    label: "Experiencia",
   },
   {
     to: pdf,
     icon: cvIcon,
     isExternal: true,
     label: "Descargar CV",
-    download: "Dariana Rengifo - Full Stack Developer - CV"
+    download: "Dariana Rengifo - Full Stack Developer - CV",
   },
   {
     to: "/contact",
     icon: contactIcon,
-    label: "Contactar"
-  }
+    label: "Contactar",
+  },
 ]);

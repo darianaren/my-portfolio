@@ -1,4 +1,4 @@
-import pdf from "../../assets/pdf/Dariana Rengifo - Full Stack Developer.pdf";
+import pdf from "../../assets/pdf/Dariana_Rengifo_Web_Developer.pdf";
 
 export const downloadCv = () => {
   const anchor = document.createElement("a");
