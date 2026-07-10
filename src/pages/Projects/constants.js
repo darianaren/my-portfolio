@@ -1,7 +1,8 @@
 import certificateEfset from "../../assets/images/certificate-efset.png";
 import certificateFullStack from "../../assets/images/certificate-full-stack.png";
 import certificateHenryHero from "../../assets/images/certificate-henry-hero.png";
-import certificateUdemy from "../../assets/images/certificate-udemy-vue-js-2.jpg";
+import certificateVue from "../../assets/images/certificate-udemy-vue-js-2.jpg";
+import certificateReactNative from "../../assets/images/cartificate-react-native.jpg";
 import experienceLocalMovers from "../../assets/images/experience-localmovers.png";
 import experienceOwoApp from "../../assets/images/experience-owo-app.png";
 import projectCookbook from "../../assets/images/project-cookbook.png";
@@ -13,28 +14,28 @@ import projectWorkMatch from "../../assets/images/project-work-match.png";
 export const PAGE_VARIANTS = Object.freeze({
   enter: (direction) => ({
     x: direction === "left" ? 100 : -100,
-    opacity: 0
+    opacity: 0,
   }),
   center: { x: 0, opacity: 1 },
-  exit: (direction) => ({ x: direction === "left" ? -100 : 100, opacity: 0 })
+  exit: (direction) => ({ x: direction === "left" ? -100 : 100, opacity: 0 }),
 });
 
 export const MENU_ITEMS = Object.freeze([
   {
     index: 0,
     key: "experience",
-    label: "Experiencia"
+    label: "Experiencia",
   },
   {
     index: 1,
     key: "projects",
-    label: "Proyectos"
+    label: "Proyectos",
   },
   {
     index: 2,
     key: "certificates",
-    label: "Certificados"
-  }
+    label: "Certificados",
+  },
 ]);
 
 export const EXPERIENCES = (openModal) =>
@@ -66,7 +67,7 @@ export const EXPERIENCES = (openModal) =>
           "<b>Integré Strapi como CMS headless</b>, consumiendo APIs para la gestión dinámica de contenidos optimizados para SEO.",
           "<b>Trabajé con PostgreSQL y Sequelize</b> en la definición y consumo de modelos de datos, asegurando consistencia y eficiencia en las consultas.",
           "<b>Apliqué buenas prácticas de código limpio y componentes reutilizables</b>, mejorando la mantenibilidad y escalabilidad del proyecto.",
-          "<b>Colaboré activamente con el equipo</b> en revisiones de código y planificación técnica, alineando desarrollo frontend con objetivos de negocio y marketing."
+          "<b>Colaboré activamente con el equipo</b> en revisiones de código y planificación técnica, alineando desarrollo frontend con objetivos de negocio y marketing.",
         ],
         techStack: [
           { key: "techStack-2-1", label: "React JS" },
@@ -75,9 +76,9 @@ export const EXPERIENCES = (openModal) =>
           { key: "techStack-2-4", label: "Strapi" },
           { key: "techStack-2-5", label: "PostgreSQL" },
           { key: "techStack-2-6", label: "Sequelize" },
-          { key: "techStack-2-7", label: "SEO Técnico" }
-        ]
-      }
+          { key: "techStack-2-7", label: "SEO Técnico" },
+        ],
+      },
     },
     {
       onClick: openModal,
@@ -99,7 +100,7 @@ export const EXPERIENCES = (openModal) =>
         { key: "experience-1-9", label: "Express JS" },
         { key: "experience-1-10", label: "Firebase" },
         { key: "experience-1-11", label: "Google Cloud Functions" },
-        { key: "experience-1-12", label: "CI/CD con GitHub Actions" }
+        { key: "experience-1-12", label: "CI/CD con GitHub Actions" },
       ],
       argsOnClick: {
         image: experienceOwoApp,
@@ -116,7 +117,7 @@ export const EXPERIENCES = (openModal) =>
           "<b>Desarrollé una librería de componentes reutilizables con Vite</b>, optimizando el rendimiento de la aplicación y reduciendo tiempos de carga.",
           "<b>Implementé pruebas unitarias con Vitest y Testing Library React</b>, optimizando el flujo de desarrollo y reduciendo errores en producción.",
           "<b>Reduje el tiempo de respuesta en la corrección de fallos</b>, al implementar monitoreo en tiempo real con Sentry, lo que permitió detectar y resolver errores críticos más rápido, mejorando la estabilidad de la aplicación en producción.",
-          "<b>Participé en la colaboración del equipo</b> a través de pair programming y revisiones de código, compartiendo mejores prácticas en tecnologías como React, Firebase y JavaScript."
+          "<b>Participé en la colaboración del equipo</b> a través de pair programming y revisiones de código, compartiendo mejores prácticas en tecnologías como React, Firebase y JavaScript.",
         ],
         techStack: [
           { key: "techStack-1-1", label: "JavaScript" },
@@ -130,10 +131,10 @@ export const EXPERIENCES = (openModal) =>
           { key: "techStack-1-9", label: "Express JS" },
           { key: "techStack-1-10", label: "Firebase" },
           { key: "techStack-1-11", label: "Google Cloud Functions" },
-          { key: "techStack-1-12", label: "CI/CD con GitHub Actions" }
-        ]
-      }
-    }
+          { key: "techStack-1-12", label: "CI/CD con GitHub Actions" },
+        ],
+      },
+    },
   ]);
 
 export const PROJECTS = (openModal) =>
@@ -153,7 +154,7 @@ export const PROJECTS = (openModal) =>
         { key: "project-1-4", label: "Material-UI" },
         { key: "project-1-5", label: "Cypress" },
         { key: "project-1-6", label: "Storybook" },
-        { key: "project-1-7", label: "CI con GitHub Actions" }
+        { key: "project-1-7", label: "CI con GitHub Actions" },
       ],
       argsOnClick: {
         deploy: "https://react-tree-app-peach.vercel.app/",
@@ -168,7 +169,7 @@ export const PROJECTS = (openModal) =>
           "<b>Configuré React Router para gestionar rutas de manera eficiente</b>, permitiendo la navegación entre diferentes secciones de la aplicación sin recargar la página.",
           "<b>Integré Storybook en el proyecto</b>, facilitando el desarrollo y la documentación de los componentes de manera aislada, lo que mejora la mantenibilidad y escalabilidad del proyecto.",
           "<b>Configuré Cypress para realizar pruebas end-to-end (E2E)</b>, asegurando que la aplicación funcione correctamente en todos los flujos de usuario, de manera automatizada y eficiente.",
-          "<b>Integré automatización con GitHub Actions</b>, configurando un flujo de trabajo para ejecutar pruebas automáticamente cada vez que se realiza un push o pull request en la rama principal del repositorio."
+          "<b>Integré automatización con GitHub Actions</b>, configurando un flujo de trabajo para ejecutar pruebas automáticamente cada vez que se realiza un push o pull request en la rama principal del repositorio.",
         ],
         techStack: [
           { key: "techStack-1-1", label: "TypeScript" },
@@ -177,9 +178,9 @@ export const PROJECTS = (openModal) =>
           { key: "techStack-1-4", label: "Material-UI" },
           { key: "techStack-1-5", label: "Cypress" },
           { key: "techStack-1-6", label: "Storybook" },
-          { key: "techStack-1-7", label: "CI con GitHub Actions" }
-        ]
-      }
+          { key: "techStack-1-7", label: "CI con GitHub Actions" },
+        ],
+      },
     },
     {
       onClick: openModal,
@@ -192,7 +193,7 @@ export const PROJECTS = (openModal) =>
       labels: [
         { key: "project-2-1", label: "Vue 3" },
         { key: "project-2-2", label: "Vite" },
-        { key: "project-2-3", label: "HTML" }
+        { key: "project-2-3", label: "HTML" },
       ],
       argsOnClick: {
         deploy: "https://drawing-app-liart.vercel.app/",
@@ -206,14 +207,14 @@ export const PROJECTS = (openModal) =>
           "<b>Implementé herramientas de personalización</b> para el tamaño y color del pincel, brindando a los usuarios un control total sobre su experiencia de dibujo.",
           "<b>Implementé la funcionalidad de borrado rápido</b>, permitiendo a los usuarios limpiar el lienzo con un solo clic y empezar de nuevo sin complicaciones.",
           "<b>Integré la opción de guardar el dibujo como una imagen PNG</b>, permitiendo que los usuarios descarguen y compartan sus creaciones con facilidad.",
-          "<b>Utilicé un diseño responsivo</b>, asegurando que la aplicación se adapte perfectamente a dispositivos de diferentes tamaños y resoluciones."
+          "<b>Utilicé un diseño responsivo</b>, asegurando que la aplicación se adapte perfectamente a dispositivos de diferentes tamaños y resoluciones.",
         ],
         techStack: [
           { key: "techStack-2-1", label: "Vue 3" },
           { key: "techStack-2-2", label: "Vite" },
-          { key: "techStack-2-3", label: "HTML" }
-        ]
-      }
+          { key: "techStack-2-3", label: "HTML" },
+        ],
+      },
     },
     {
       onClick: openModal,
@@ -232,7 +233,7 @@ export const PROJECTS = (openModal) =>
         { key: "project-3-6", label: "Node JS" },
         { key: "project-3-7", label: "Express JS" },
         { key: "project-3-8", label: "SQLite y SQLite3" },
-        { key: "project-3-8", label: "Jest" }
+        { key: "project-3-8", label: "Jest" },
       ],
       argsOnClick: {
         github: "https://github.com/darianaren/task-management",
@@ -248,7 +249,7 @@ export const PROJECTS = (openModal) =>
           "<b>Desarrollé una API REST</b>, proporcionando endpoints seguros y eficientes para la gestión de tareas.",
           "<b>Implementé pruebas unitarias con Jest</b>, asegurando la fiabilidad de los endpoints y reduciendo errores en producción.",
           "<b>Configuré ESLint y Prettier en el proyecto</b>, asegurando un código limpio, estandarizado y fácil de mantener.",
-          "<b>Apliqué principios de Clean Code y estructuración de responsabilidad única</b>, facilitando la escalabilidad y el mantenimiento del código a largo plazo."
+          "<b>Apliqué principios de Clean Code y estructuración de responsabilidad única</b>, facilitando la escalabilidad y el mantenimiento del código a largo plazo.",
         ],
         techStack: [
           { key: "techStack-3-1", label: "TypeScript" },
@@ -259,9 +260,9 @@ export const PROJECTS = (openModal) =>
           { key: "techStack-3-6", label: "Node JS" },
           { key: "techStack-3-7", label: "Express JS" },
           { key: "techStack-3-8", label: "SQLite y SQLite3" },
-          { key: "techStack-3-8", label: "Jest" }
-        ]
-      }
+          { key: "techStack-3-8", label: "Jest" },
+        ],
+      },
     },
     {
       onClick: openModal,
@@ -283,7 +284,7 @@ export const PROJECTS = (openModal) =>
         { key: "project-4-9", label: "Nodemailer" },
         { key: "project-4-10", label: "Sequelize" },
         { key: "project-4-11", label: "Docker" },
-        { key: "project-4-12", label: "Stripe" }
+        { key: "project-4-12", label: "Stripe" },
       ],
       argsOnClick: {
         github: "https://github.com/darianaren/Work-Match",
@@ -301,7 +302,7 @@ export const PROJECTS = (openModal) =>
           "<b>Desarrollé una funcionalidad de eliminación lógica</b>, garantizando que los usuarios puedan eliminar sus publicaciones de trabajo sin perder información valiosa.",
           "<b>Optimizé la forma de búsqueda y filtrado combinado</b>, lo que permite a los usuarios encontrar trabajos específicos rápidamente, mejorando la eficiencia y rapidez de la aplicación.",
           "<b>Apliqué estilos utilizando módulos CSS</b>, asegurando un diseño limpio, moderno y fácilmente mantenible para una experiencia visual consistente.",
-          "<b>Diseñé e implementé un formulario controlado y optimizado</b>, incorporando validaciones en tiempo real, mejorando la experiencia de usuario y reduciendo errores de entrada."
+          "<b>Diseñé e implementé un formulario controlado y optimizado</b>, incorporando validaciones en tiempo real, mejorando la experiencia de usuario y reduciendo errores de entrada.",
         ],
         techStack: [
           { key: "techStack-4-1", label: "JavaScript" },
@@ -315,9 +316,9 @@ export const PROJECTS = (openModal) =>
           { key: "techStack-4-9", label: "Nodemailer" },
           { key: "techStack-4-10", label: "Sequelize" },
           { key: "techStack-4-11", label: "Docker" },
-          { key: "techStack-4-12", label: "Stripe" }
-        ]
-      }
+          { key: "techStack-4-12", label: "Stripe" },
+        ],
+      },
     },
     {
       onClick: openModal,
@@ -334,7 +335,7 @@ export const PROJECTS = (openModal) =>
         { key: "project-5-4", label: "Redux" },
         { key: "project-5-5", label: "Node JS" },
         { key: "project-5-6", label: "Express JS" },
-        { key: "project-5-7", label: "Sequelize" }
+        { key: "project-5-7", label: "Sequelize" },
       ],
       argsOnClick: {
         github: "https://github.com/darianaren/my-cookbook",
@@ -350,7 +351,7 @@ export const PROJECTS = (openModal) =>
           "<b>Optimizé la experiencia de usuario con una interfaz responsiva</b> usando CSS Modules, garantizando el acceso fácil y fluido desde cualquier dispositivo.",
           "<b>Manejé el estado global con Redux</b>, facilitando la gestión de configuraciones de la aplicación como el cambio de tema (claro/oscuro) y la activación/desactivación de música de fondo, mejorando la experiencia del usuario.",
           "<b>Diseñé e implementé un formulario controlado y optimizado</b>, mejorando la experiencia de usuario y reduciendo errores de entrada.",
-          "<b>Utilicé axios para realizar solicitudes HTTP al backend</b>, garantizando la eficiencia en el manejo de datos de recetas y usuarios."
+          "<b>Utilicé axios para realizar solicitudes HTTP al backend</b>, garantizando la eficiencia en el manejo de datos de recetas y usuarios.",
         ],
         techStack: [
           { key: "techStack-5-1", label: "JavaScript" },
@@ -359,10 +360,10 @@ export const PROJECTS = (openModal) =>
           { key: "techStack-5-4", label: "Redux" },
           { key: "techStack-5-5", label: "Node JS" },
           { key: "techStack-5-6", label: "Express JS" },
-          { key: "techStack-5-7", label: "Sequelize" }
-        ]
-      }
-    }
+          { key: "techStack-5-7", label: "Sequelize" },
+        ],
+      },
+    },
   ]);
 
 export const CERTIFICATES = (openModal) =>
@@ -370,28 +371,43 @@ export const CERTIFICATES = (openModal) =>
     {
       onClick: () =>
         window.open(
+          "https://www.udemy.com/certificate/UC-52da7bf1-9212-4d33-8b07-4d072a19db77/",
+          "_blank",
+          "noreferrer",
+        ),
+      key: "certificate-udemy-react-native",
+      title: "React Native",
+      subtitle: "Julio 2026",
+      image: certificateReactNative,
+      description:
+        "EAS, Push Notifications, Mapas, Rutas, Haptics, Cámara, Galería, Secure Storage, GeoLocation, Google y Apple AppStore.",
+    },
+    {
+      onClick: () =>
+        window.open(
           "https://www.udemy.com/certificate/UC-f46e45db-751d-46bc-9ba9-30dca8c03522/",
           "_blank",
-          "noreferrer"
+          "noreferrer",
         ),
       key: "certificate-udemy-vue-js-2",
       title: "Vue JS 2",
       subtitle: "Febrero 2026",
-      image: certificateUdemy,
-      description: "Template - Directivas y reactividad - Componentes y comunicación entre componentes - Ciclo de vida - Enrutamiento (Vue Router)"
+      image: certificateVue,
+      description:
+        "Template - Directivas y reactividad - Componentes y comunicación entre componentes - Ciclo de vida - Enrutamiento (Vue Router)",
     },
     {
       onClick: () =>
         window.open(
           "https://www.efset.org/cert/7vN1ae",
           "_blank",
-          "noreferrer"
+          "noreferrer",
         ),
       key: "certificate-efset",
       title: "EF Standard English Test (EF SET)",
       subtitle: "Febrero 2023",
       image: certificateEfset,
-      description: "Inglés B2"
+      description: "Inglés B2",
     },
     {
       onClick: openModal,
@@ -411,9 +427,9 @@ export const CERTIFICATES = (openModal) =>
           { key: "knowledge-2-4", label: "Node JS" },
           { key: "knowledge-2-5", label: "React JS" },
           { key: "knowledge-2-6", label: "Redux" },
-          { key: "knowledge-2-7", label: "SQL" }
-        ]
-      }
+          { key: "knowledge-2-7", label: "SQL" },
+        ],
+      },
     },
     {
       onClick: openModal,
@@ -434,15 +450,15 @@ export const CERTIFICATES = (openModal) =>
           { key: "knowledge-3-5", label: "Node JS" },
           { key: "knowledge-3-6", label: "React JS" },
           { key: "knowledge-3-7", label: "Redux" },
-          { key: "knowledge-3-8", label: "SQL" }
-        ]
-      }
-    }
+          { key: "knowledge-3-8", label: "SQL" },
+        ],
+      },
+    },
   ]);
 
 export const MENU_PAGE = (openModal) =>
   Object.freeze({
     0: { menuPage: EXPERIENCES(openModal), divider: true },
     1: { menuPage: PROJECTS(openModal), divider: true },
-    2: { menuPage: CERTIFICATES(openModal), orientation: "vertical" }
+    2: { menuPage: CERTIFICATES(openModal), orientation: "vertical" },
   });
